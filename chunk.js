@@ -1,6 +1,22 @@
 // CHUNK
 // Given an array and chunk size, divide the array into many subarrays where each subarray is of length size
 
+// Solution #2, using slice function. slice(start index, end index but excluding the last index)
+function chunk(array, size) {
+  const chunked = [];
+  let index = 0;
+
+  while (index < array.length) {
+    chunked.push(array.slice(index, index + size));
+    index += size;
+  }
+
+  return chunked;
+}
+
+// Change these parameters
+console.log(chunk([1,2,3,4,5], 2))
+
 // // My solution
 // function chunk(array, size) {
 //   let chunkArray = [];
@@ -21,22 +37,6 @@
 
 //   return chunkArray;
 // }
-
-// Solution #2, using slice function. slice(start index, end index but excluding the last index)
-function chunk(array, size) {
-  const chunked = [];
-  let index = 0;
-
-  while (index < array.length) {
-    chunked.push(array.slice(index, index + size));
-    index += size;
-  }
-
-  return chunked;
-}
-
-// Change these parameters
-console.log(chunk([1,2,3,4,5], 2))
 
 // // Solution #1, using last element
 // function chunk(array, size) {

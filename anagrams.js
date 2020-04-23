@@ -1,6 +1,17 @@
 // ANAGRAMS
 // Check if two strings are anagrams of eachother
 
+// Alternative solution #1, using sort() method
+function anagrams(stringA, stringB) {
+  return cleanString(stringA) === cleanString(stringB);
+}
+
+function cleanString(str) {
+  return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
+}
+
+console.log(anagrams(process.argv[2], process.argv[3]))
+
 // // My solution
 // function anagrams(stringA, stringB) {
 
@@ -46,17 +57,6 @@
 
 //   return true;
 // }
-
-// Alternative solution #1, using sort() method
-function anagrams(stringA, stringB) {
-  return cleanString(stringA) === cleanString(stringB);
-}
-
-function cleanString(str) {
-  return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
-}
-
-console.log(anagrams(process.argv[2], process.argv[3]))
 
 // // Solution #1, using helper functions
 // function anagrams(stringA, stringB) {

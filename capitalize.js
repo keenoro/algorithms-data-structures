@@ -1,18 +1,6 @@
 // CAPITALIZE
 // Capitalize the first letter of each word in a sentence
 
-// // My solution
-// function capitalize(str) {
-//   const strArray = str.split(' ');
-//   let capitalized = [];
-
-//   for (let word of strArray) {
-//     capitalized.push(word[0].toUpperCase() + word.slice(1))
-//   }
-
-//   return capitalized.join(' ');
-// }
-
 // Alternative solution
 function capitalize(str) {
   let result = str[0].toUpperCase();
@@ -30,6 +18,18 @@ function capitalize(str) {
 }
 
 console.log(capitalize(process.argv[2]));
+
+// // My solution
+// function capitalize(str) {
+//   const strArray = str.split(' ');
+//   let capitalized = [];
+
+//   for (let word of strArray) {
+//     capitalized.push(word[0].toUpperCase() + word.slice(1))
+//   }
+
+//   return capitalized.join(' ');
+// }
 
 // // Solution #1
 // function capitalize(str) {
