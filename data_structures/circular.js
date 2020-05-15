@@ -1,4 +1,4 @@
-// CIRCULAR
+// CIRCULAR (Linked List)
 // Check if a linked list has a cycle
 // Return true if the list contains a cycle, false if it does not
 
